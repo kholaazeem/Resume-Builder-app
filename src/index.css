@@ -1,68 +1,63 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff; /* Pure White Background */
+  color: #000000; /* Pure Black Text */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* --- BLACK NAVBAR --- */
+.navbar-custom {
+  background-color: #000000 !important;
+  border-bottom: 1px solid #000000;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: #ffffff !important;
+  text-transform: uppercase;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* --- INPUT FIELDS (No Blue Glow) --- */
+.form-control {
+  border: 2px solid #000000; /* Black Border */
+  border-radius: 0px; /* Sharp Edges */
+  color: #000000;
+  padding: 12px;
+}
+
+.form-control:focus {
+  border-color: #000000;
+  box-shadow: none; /* Blue glow hata diya */
+  background-color: #f8f8f8;
+}
+
+/* --- BUTTONS (Pure Black) --- */
+.btn-black {
+  background-color: #000000;
+  border: 2px solid #000000;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0px; /* Sharp Edges */
+  padding: 12px 0;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-black:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+/* --- CARD (Simple Border) --- */
+.card-auth {
+  border: 2px solid #000000;
+  border-radius: 0px;
+  background-color: #ffffff;
 }
