@@ -1,16 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap integration [cite: 13]
-import Login from "./pages/Login.jsx";
-import Dashboard from "./pages/Dashboard.jsx";
-import Editor from "./pages/Editor.jsx";
-import Navbar from "./components/Navbar.jsx";
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
+import Editor from './pages/Editor';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <Router>
-      <div className="bg-white text-dark min-vh-100"> {/* Black & White Theme */}
-        <Navbar />
+      <div style={{ backgroundColor: '#f3f4f6', minHeight: '100vh' }}>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
