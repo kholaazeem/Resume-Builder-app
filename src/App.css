@@ -40,3 +40,29 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .preview-container {
+    width: 100% !important;
+    min-height: auto !important;
+    padding: 20px !important;
+    transform: none !important; /* Scale hata dein agar full width chahiye */
+    overflow-x: hidden;
+  }
+  
+  .card {
+    border-radius: 15px !important;
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    width: 100%; /* Mobile par buttons full width ache lagte hain */
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 1.8rem !important;
+  }
+}

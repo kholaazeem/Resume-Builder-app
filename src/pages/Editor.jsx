@@ -276,7 +276,11 @@ const Editor = () => {
         </div>
       </div>
     </div>
+
+    
   );
+
+  
 };
 
 export default Editor;
